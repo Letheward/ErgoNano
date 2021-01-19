@@ -1,0 +1,91 @@
+## Paint the interface elements of nano.
+set titlecolor bold,lightwhite,blue
+set statuscolor bold,lightwhite,green
+set errorcolor bold,lightwhite,red
+set selectedcolor lightwhite,magenta
+set stripecolor ,yellow
+set scrollercolor cyan
+set numbercolor cyan
+set keycolor cyan
+set functioncolor green
+
+## Personal Customization
+set tabsize 4
+set breaklonglines
+set autoindent
+set indicator
+
+## === Syntax coloring ===
+include "/usr/share/nano/*.nanorc"
+
+## === Keybindings ===
+
+## Common Universal Shortcuts
+bind ^Z undo main
+bind ^Y redo main
+
+bind ^X cut main
+bind ^C copy main
+bind ^V paste main
+
+bind ^F whereis all
+
+## Command
+bind M-Z savefile all
+bind M-X writeout all
+
+bind M-` recordmacro all
+bind M-; runmacro all
+
+bind M-K cancel all
+
+unbind M-T all
+unbind ^G all
+unbind ^X help
+unbind ^C help
+unbind ^Q all
+unbind ^R all
+unbind ^T all
+unbind ^J all
+unbind ^_ all
+
+## Toggle
+bind M-1 nohelp all
+bind M-2 linenumbers all
+bind M-3 constantshow all
+bind M-4 whitespacedisplay all
+bind M-5 nosyntax all
+
+## Movement
+bind M-W up all
+bind M-S down all
+bind M-A left all
+bind M-D right all
+
+bind M-C center all
+
+bind M-Q prevword all
+bind M-E nextword all
+bind M-R prevblock all
+bind M-F nextblock all
+
+## Search
+bind M-N whereis all
+bind M-B replace all
+
+bind M-Y findprevious all
+bind M-H findnext all
+
+## Action
+bind M-U undo main
+bind M-O redo main
+
+bind M-M mark main
+bind M-J cut main
+bind M-I copy main
+bind M-L paste main
+
+bind M-P comment main
+
+bind M-K backspace main
+
